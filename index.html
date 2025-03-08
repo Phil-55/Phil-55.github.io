@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <link href="styles/style.css" rel="stylesheet" />
-    <link href="styles/rules.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
+    <script type= 'module' src="Scripts/Script.js"></script>
+
+    <title>Silly story generator</title>
+
+    <style>
+      body {
+        font-family: helvetica, sans-serif;
+        width: 350px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      div {
+        padding-bottom: 20px;
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        width: 150px;
+      }
+
+      p {
+        background: #ffc125;
+        color: #5e2612;
+        padding: 10px;
+        visibility: hidden;
+      }
+    </style>
   </head>
-<!-- eeeeeeeeeeeeeee -->
+
   <body>
-    <h4> Portrait of Dog </h4>
-    <h6> Click Here!!! </h6>
-    <img src="images/Alaskan-Malamute-standing-in-the-grass1-400x267.jpg" alt="Alaskan Malamute standing in the grass" />
-    
     <div>
-    <h1> The Shrine of Dog </h1>
-
-    <p> Lore-yum ip-sum LORE-yum IP-sum LORE-YUM IP-sum lore-YUM ip-SUM </p>
-
-    <p>dogsdogsdogsdogsdogsdogsDOGsddogsdogsdogsDogdsDOGSdogsdoGSdogs
-dogsdogsdogsSdDgosdgosdgosDVOdgdgodgoDSdogSdogSdogdfosdgos 
-    </p>
-
-  <p> A place to reflect on </p>
-
-  <p>
-  1. dogs <br>
-  2. dogos <br>
-  3. dogis <br>
-  4. ogdis <br>
-  5. doogies <br>
-  6. dugos
-  </p>
-
-  <button>Change user</button>
-
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" placeholder="" />
     </div>
-  
-
-
-
-
-
-
-
-<a href="https://undertale.fandom.com/wiki/Dog_Shrine" > d̵͕̺̱̙͛͝ō̶͉͓͖̈́̓͝g̵̹̻̘͊̀̊s̷͇̼̲̤̓̏̓̏ģ̴̇̈͘ò̶̧͖͜d̵̻͉͉̔͋͝s̶̘͊̐̈́͑ </a>  
-
-<script src="scripts/main.js"></script>
-
+    <div>
+      <label for="us">US</label
+      ><input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label
+      ><input id="uk" type="radio" name="ukus" value="uk" />
+    </div>
+    <div>
+      <button class="randomize">Generate random story</button>
+    </div>
+    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <p class="story"></p>
   </body>
 </html>
-
